@@ -10,8 +10,10 @@ int main(void)
 {
 char i;
 
-for (i = '0'; i <= '9'; ++i)
+for (i = '0'; i <= '9'; ++1)
 putchar(i);
 
 putchar('\n');
+
+return (0);
 }
