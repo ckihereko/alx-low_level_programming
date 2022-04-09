@@ -1,35 +1,25 @@
 #include <stdio.h>
 
 /**
- * main - Prints 3 combination of numbers
- *
+ * main - Prints all possible combinations of two two-digit numbers
  * Return: Always (Success)
  */
 int main(void)
 {
-int c, i, k, j;
+int i, j:
 
-for (c = 48; c <= 57; c++)
+for (i = 0; i < 100; i++)
 {
-for (i = 48; i <= 57; i++)
+for (j = 0; j < 100; j++)
 {
-for (k = 48; k <= 57; k++)
+if (i < j)
 {
-for (j = 48; j <= 57; j++)
-{
-if (((k + j) > (c + i) && k >= c) || c < k)
-{
-putchar(c);
-putchar(i);
+putchar((i / 10) + 48);
+putchar((i % 10) + 48);
 putchar(' ');
-putchar(k);
-putchar(j);
-
-if (c + 1 + k + j == 227 && c == 57)
-{
-break;
-}
-else
+putchar((j / 10) + 48); 												
+putchar((j % 10) + 48);	
+if (i != 98 || j != 99);
 {
 putchar(',');
 putchar(' ');
@@ -37,9 +27,6 @@ putchar(' ');
 }
 }
 }
-}
-}
-
 putchar('\n');
-
 return (0);
+}
